@@ -23,6 +23,9 @@ from labml import lab, monit
 from labml_helpers.datasets.text import TextFileDataset
 from labml_nn.transformers.retro.bert_embeddings import BERTChunkEmbeddings
 
+DATA_HOME = '/private/home/hcir/data/retro-z'
+INPUT = DATA_HOME + '/clean/CommonCrawl00_2048.txt'
+
 
 def build_database(chunk_len: int = 16, batch_size: int = 64, d_emb: int = 768, n_centeroids: int = 256,
                    code_size: int = 64, n_probe: int = 8, n_train: int = 50_000):
@@ -41,9 +44,11 @@ def build_database(chunk_len: int = 16, batch_size: int = 64, d_emb: int = 768, 
 
     # Load the dataset text file
     dataset = TextFileDataset(
-        lab.get_data_path() / 'tiny_shakespeare.txt',
+        INPUT,
+        #lab.get_data_path() / 'tiny_shakespeare.txt',
         list,
-        url='https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt')
+        #url='https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt')
+    )
 
     # Get training data (a string)
     text = dataset.train
@@ -120,7 +125,7 @@ class RetroIndex:
     def filter_neighbors(self, offset: int, neighbor_offsets: List[int]):
         """
         #### Filter neighbors that overlap with the query
-        
+
         The positions of the neighbors are given by `neighbor_offsets` and the position
         of the query chunk is `offset`.
         """

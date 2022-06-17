@@ -1,0 +1,189 @@
+(base) hcir@devfair0828:~/src$  cd /private/home/hcir/src ; /usr/bin/env /public/apps/anaconda3/2021.05/bin/python /private/home/hcir/.vscode-server/extensions/ms-python.python-2022.8.0/pythonFiles/lib/python/debugpy/launcher 44847 -- /private/home/hcir/src/richjames0/annotated_deep_learning_paper_implementations/labml_nn/transformers/retro/train.py
+Load data...[DONE]      5.66ms
+Tokenize...[DONE]       25.94ms
+Build vocabulary...[DONE].63ms  3.67ms
+Load BERT tokenizer...[DONE]    1,377.65ms
+Load BERT model...Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Load BERT model...[DONE]        2,013.78ms
+Load index...[DONE]     36.01ms
+   1,947:  Train: 100% 44,331ms   loss.train:  2.07858  44,331ms  0:00m/  0:22m
+ 0 :  And the the the the the the the the the the the the the the the the the the the there hand
+The the the the the the the the the
+   3,894:  Train: 100% 44,303ms   loss.train:  1.73502  71,659ms  0:01m/  0:36m
+ 1 :  Who her in the come to the come of the come.
+
+First Come to the come to the come of the come.
+
+First Murderer:
+Where he here hi
+   5,841:  Train: 100% 44,226ms   loss.train:  1.65721  55,800ms  0:02m/  0:27m
+ 2 :  I will the head the brother death the brother's the heads to he death the brother's the duke of these to the brother's the brot
+   7,788:  Train: 100% 44,228ms   loss.train:  1.53555  50,894ms  0:03m/  0:23m
+ 3 :  I will not to the fall the fall of the father
+To be the words of the father of the father of
+the father of the father of the fa
+   9,735:  Train: 100% 44,226ms   loss.train:  1.36095  48,731ms  0:04m/  0:21m
+ 4 :  We have the courter of the conscience of the words,
+And the be so of the conscience of the words,
+And therefore the conscience
+  11,682:  Train: 100% 44,230ms   loss.train:  1.31134  47,626ms  0:05m/  0:20m
+ 5 :  Why, and the body be so bear to the house,
+Which he hath been the took of the body of the
+seater of the body of the body of the
+  13,629:  Train: 100% 44,224ms   loss.train:  1.30566  47,022ms  0:05m/  0:19m
+ 6 :  We have been to the corruption of the courtesy
+A proper of the world of the better the world
+And the death of the worth of the
+  15,576:  Train: 100% 44,232ms   loss.train:  1.33975  46,676ms  0:06m/  0:18m
+ 7 :  We have not strike and for this war.
+
+First Citizen:
+The same the say that say the contrary to the come.
+
+First Citizen:
+Why, a
+  17,523:  Train: 100% 44,247ms   loss.train:  1.30445  46,477ms  0:07m/  0:17m
+ 8 :  Why, sirs he had speak to his head and stay the
+sense of its; and the golden shall stirr the
+seasing the sight of the country a
+  19,470:  Train: 100% 44,237ms   loss.train:  1.13846  46,367ms  0:08m/  0:16m
+ 9 :  Then we perain to his course his head.
+
+Second Citizen:
+Then we shall have a courteous are all to the people.
+
+Third Citizen:
+T
+  21,417:  Train: 100% 44,235ms   loss.train:  0.93618  46,307ms  0:08m/  0:15m
+ 10 :  Why, then we have seen to the sentence of the world
+With the good for the seas as a face, as the seas
+that the rest of the rest
+  23,364:  Train: 100% 44,279ms   loss.train:  1.04805  46,273ms  0:09m/  0:15m
+ 11 :  We have no look of the senators, and the strongly
+and to the provost to the prisoner, and the depend
+of the people to the senat
+  25,311:  Train: 100% 44,275ms   loss.train:  1.15449  46,262ms  0:10m/  0:14m
+ 12 :  We cannot see:
+I have begin to the Corioli of it that this
+To be in the sentence on the field
+To be the beggars of the sentence
+  27,258:  Train: 100% 44,272ms   loss.train:  1.16456  46,253ms  0:11m/  0:13m
+ 13 :  Why, then, and bothe deputy to the people.
+
+CORIOLANUS:
+Come, good met, gentlemen, and a vow the change of the sea,
+That thou a
+  29,205:  Train: 100% 44,252ms   loss.train: 0.891809  46,245ms  0:11m/  0:12m
+ 14 :  Could be good to buy this in the strong.
+
+Second Citizen:
+What shall be granted to the sun and sir, and the
+disture of the sacr
+  31,152:  Train: 100% 44,262ms   loss.train: 0.930480  46,241ms  0:12m/  0:11m
+ 15 :  Now to give his the duke anow of the greatest,
+The people and to the point of the princes
+The princess of our country 'shall no
+  33,099:  Train: 100% 44,291ms   loss.train: 0.954955  46,241ms  0:13m/  0:11m
+ 16 :  Now to give her that she is contrary.
+
+Second Citizen:
+Could so farewell, sir.
+
+Second Citizen:
+We have no sound upon his head
+  35,046:  Train: 100% 44,282ms   loss.train: 0.721037  46,244ms  0:14m/  0:10m
+ 17 :  Why, therefore, how you will not harry with the
+rest of Corioling honour arms out of surely? and so you
+would not stay with the
+  36,993:  Train: 100% 44,275ms   loss.train: 0.819717  46,243ms  0:15m/  0:09m
+ 18 :  No many owes not this fout a voice:
+Believe you, good aution of the people.
+
+Third Citizen:
+The rey, and then, to the people's
+  38,940:  Train: 100% 44,302ms   loss.train: 0.755946  46,249ms  0:15m/  0:08m
+ 19 :  He shall have hear them, these his mothers: he
+nobles his face, how forth his high deed?
+
+Third Citizen:
+Who haste, and then ha
+  40,887:  Train: 100% 44,290ms   loss.train: 0.562952  46,255ms  0:16m/  0:08m
+ 20 :  Now in the peace that then?
+
+SLY:
+No, no noble.
+
+First Citizen:
+He sister than he should be those that he will not?
+
+Second Cit
+  42,834:  Train: 100% 44,314ms   loss.train: 0.814120  46,256ms  0:17m/  0:07m
+ 21 :  Now, by our good requity; for the rest, and the
+doom him the white to seek him seen to the foul
+He hard helming. Happiered and
+  44,781:  Train: 100% 44,312ms   loss.train: 0.614095  46,265ms  0:18m/  0:06m
+ 22 :  Now six to the duke of himself and his son:
+Come, 'tis a power; prisoner, his country,
+He thou shalt dissoner.
+
+First Citizen:
+
+  46,728:  Train: 100% 44,336ms   loss.train: 0.645282  46,272ms  0:18m/  0:05m
+ 23 :  He smeans i' the scoperds of the hollow me; and,
+The princes of our disstanted for a voice
+Than one as he did content to him.
+
+
+  48,675:  Train: 100% 44,330ms   loss.train: 0.557859  46,280ms  0:19m/  0:05m
+ 24 :  Hell, some good friend to him and his gross,
+Even wine and fleshal, to dry for their pride.
+
+Third Servingman:
+What say she? he
+  50,622:  Train: 100% 44,359ms   loss.train: 0.576763  46,285ms  0:20m/  0:04m
+ 25 :  Why, that he, mine, my liege, and the worst?
+
+CORIOLANUS:
+The fortune's married and direct to proud withal.
+
+CORIOLANUS:
+And to
+  52,569:  Train: 100% 44,736ms   loss.train: 0.479484  46,297ms  0:21m/  0:03m
+ 26 :  He shall, and the shall the morning threatening the
+greater wronged of the becomes. Follow myself,
+Look us first.
+
+First Citize
+  54,516:  Train: 100% 64,070ms   loss.train: 0.426022  46,520ms  0:22m/  0:02m
+ 27 :  Not I'll good grickly of my vourness with me; for
+well on provided in the disemember, give me thy
+sist to dreking the victority
+  56,463:  Train: 100% 63,004ms   loss.train: 0.451392  55,159ms  0:23m/  0:05m
+ 28 :  Now so to more this in the city anon.
+
+Third Citizen:
+The garden of one an a malant out of their bab,
+from thence and comfort t
+  58,410:  Train: 100% 65,329ms   loss.train: 0.334882  59,976ms  0:24m/  0:07m
+ 29 :  Why, you fore we?
+
+MENENIUS:
+No, madam, go.
+
+First Citizen:
+No, to give this business are his feast, that
+starts not great powe
+  60,357:  Train: 100% 64,416ms   loss.train: 0.353610  63,904ms  0:25m/  0:08m
+ 30 :  We can pluck the head our grace of death, but the
+duke of Citizon, and to a bad him diseased, the
+leest
+Unto the peace, 'tis bu
+  62,304:  Train: 100% 63,658ms   loss.train: 0.649385  65,773ms  0:26m/  0:08m
+ 31 :  When you word his friends, reported in our arms.
+
+First Citizen:
+You have obedience makes the worst I should
+To your great bass
+(base) hcir@devfair0828:~/src$

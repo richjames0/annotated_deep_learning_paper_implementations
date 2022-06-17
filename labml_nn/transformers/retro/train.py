@@ -160,7 +160,7 @@ def train():
     """
 
     # Create an experiment
-    experiment.create(name='retro_small')
+    # experiment.create(name='retro_small')
 
     # GPU device
     device = torch.device('cuda:0')
@@ -205,21 +205,22 @@ def train():
     prompt = '''Second Citizen:\nOne word, good citizens.\n\nFirst Citizen:'''
 
     # Set models for saving and loading
-    experiment.add_pytorch_models(model=model)
+    # experiment.add_pytorch_models(model=model)
 
     # Start the experiment
-    with experiment.start():
-        # Train for `32` epochs
-        for epoch in monit.loop(32):
-            # Train
-            trainer()
-            # Print a new line
-            tracker.new_line()
-            # Sample from the `prompt`
-            logger.log([(prompt.replace('\n', '\\n\n'), Text.subtle),
-                        (sampler.sample(prompt, 128).replace('\n', '\\n\n'), Text.none)])
-            # Save models
-            experiment.save_checkpoint()
+    # with experiment.start():
+    # Train for `32` epochs
+    for epoch in monit.loop(32):
+        # Train
+        trainer()
+        print('\n', epoch, ': ', sampler.sample(prompt, 128)[1:])  # .replace('\n', '\\n\n')
+        # Print a new line
+        # tracker.new_line()
+        # Sample from the `prompt`
+        # logger.log([(prompt.replace('\n', '\\n\n'), Text.subtle),
+        #             (sampler.sample(prompt, 128).replace('\n', '\\n\n'), Text.none)])
+        # # Save models
+        # experiment.save_checkpoint()
 
 
 #

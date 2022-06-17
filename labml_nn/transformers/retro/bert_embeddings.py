@@ -107,40 +107,49 @@ class BERTChunkEmbeddings:
             return emb
 
 
-def _test():
-    """
-    ### Code to test BERT embeddings
-    """
-    from labml.logger import inspect
+DATA_HOME = '/private/home/hcir/data/retro-z'
+INPUT = DATA_HOME + '/clean/CommonCrawl00_2048.txt'
 
-    # Initialize
-    device = torch.device('cuda:0')
-    bert = BERTChunkEmbeddings(device)
 
-    # Sample
-    text = ["Replace me by any text you'd like.",
-            "Second sentence"]
+# TODO: Why does this execute without any issue but fail on import at line 120? Is it my text or is it the import above or??
+# def _test():
+#     """
+#     ### Code to test BERT embeddings
+#     """
+#     from labml.logger import inspect
 
-    # Check BERT tokenizer
-    encoded_input = bert.tokenizer(text, return_tensors='pt', add_special_tokens=False, padding=True)
+#     text = ''
+#     with open(INPUT, 'r') as file_:
+#         text = file_.readlines(4096)[:2]
 
-    inspect(encoded_input, _expand=True)
+#     # Initialize
+#     device = torch.device('cuda:0')
+#     bert = BERTChunkEmbeddings(device)
 
-    # Check BERT model outputs
-    output = bert.model(input_ids=encoded_input['input_ids'].to(device),
-                        attention_mask=encoded_input['attention_mask'].to(device),
-                        token_type_ids=encoded_input['token_type_ids'].to(device))
+#     # Sample
+#     # text = ["Replace me by any text you'd like.",
+#     #         "Second sentence"]
 
-    inspect({'last_hidden_state': output['last_hidden_state'],
-             'pooler_output': output['pooler_output']},
-            _expand=True)
+#     # Check BERT tokenizer
+#     encoded_input = bert.tokenizer(text, return_tensors='pt', add_special_tokens=False, padding=True)
 
-    # Check recreating text from token ids
-    inspect(bert.tokenizer.convert_ids_to_tokens(encoded_input['input_ids'][0]), _n=-1)
-    inspect(bert.tokenizer.convert_ids_to_tokens(encoded_input['input_ids'][1]), _n=-1)
+#     inspect(encoded_input, _expand=True)
 
-    # Get chunk embeddings
-    inspect(bert(text))
+#     # Check BERT model outputs
+#     output = bert.model(input_ids=encoded_input['input_ids'].to(device),
+#                         attention_mask=encoded_input['attention_mask'].to(device),
+#                         token_type_ids=encoded_input['token_type_ids'].to(device))
+
+#     inspect({'last_hidden_state': output['last_hidden_state'],
+#              'pooler_output': output['pooler_output']},
+#             _expand=True)
+
+#     # Check recreating text from token ids
+#     inspect(bert.tokenizer.convert_ids_to_tokens(encoded_input['input_ids'][0]), _n=-1)
+#     inspect(bert.tokenizer.convert_ids_to_tokens(encoded_input['input_ids'][1]), _n=-1)
+
+#     # Get chunk embeddings
+#     inspect(bert(text))
 
 
 #
